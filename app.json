@@ -25,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "8ede2950-b191-47e1-a2cf-fb772d0edb62"
+      }
+    },
+    "owner": "introvette"
   }
 }
