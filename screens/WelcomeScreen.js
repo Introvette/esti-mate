@@ -16,10 +16,11 @@ const WelcomeScreen = () => {
     container: {
         paddingVertical: 50,
         paddingHorizontal: 30,
-        backgroundColor: 'teal',
+        backgroundColor: 'orange',
         alignItems: 'center',
-        borderColor: 'pink',
-        borderWidth: 5
+        borderColor: 'white',
+        borderWidth: 5,
+        fontSize: 24,
     },
   });
 

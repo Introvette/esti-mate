@@ -17,7 +17,7 @@ const LoginScreen = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Login Screen</Text>
+      <Text style={styles.title}>Login</Text>
       <TextInput
         style={styles.input}
         placeholder="Username"
@@ -34,7 +34,9 @@ const LoginScreen = () => {
       {loginError && (
         <Text style={styles.errorText}>Invalid username or password</Text>
       )}
-      <Button title="Login" onPress={handleLogin} />
+      <View style={styles.loginButton}>
+      <Button style={styles.loginButton} title="Login" onPress={handleLogin} />
+      </View>
     </View>
   );
 };
@@ -58,11 +60,15 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     marginBottom: 16,
     paddingHorizontal: 10,
+    color: '#fff',
   },
   errorText: {
     color: 'red',
     marginBottom: 16,
   },
+  loginButton: {
+    backgroundColor: 'white'
+  }
 });
 
 export default LoginScreen;
